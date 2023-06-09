@@ -1,0 +1,98 @@
+.login {
+  height: 100vh;
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eef2f3,
+    #8e9eab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eef2f3,
+    #8e9eab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card {
+    width: 50%;
+    border-radius: 30px;
+    display: flex;
+    background: linear-gradient(#0c233b42, #0c3f0631), transparent;
+    min-height: 600px;
+    overflow: hidden;
+    border: 1px soild #eee;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    .left {
+      flex: 1;
+      background: linear-gradient(
+          rgba(221, 89, 27, 0.644),
+          rgba(7, 182, 7, 0.404)
+        ),
+        url("https://images.pexels.com/photos/2307562/pexels-photo-2307562.jpeg?auto=compress&cs=tinysrgb&w=1600")
+          center;
+      background-size: cover;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: #fff;
+
+      h1 {
+        font-size: 45px;
+        line-height: 100px;
+      }
+      p {
+      }
+      span {
+        font-size: 14px;
+      }
+      button {
+        width: 50%;
+        padding: 15px;
+        border-radius: 2px;
+        border: none;
+        color: #000000;
+        font-weight: 600;
+        cursor: pointer;
+        background-color: #fff;
+      }
+    }
+    .right {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+
+      h1 {
+        color: #463535;
+        font-size: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        input {
+          border: none;
+          padding: 20px 10px;
+          border-bottom: 1px solid lightblue;
+        }
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: #8f3ca3c9;
+          font-weight: bold;
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}
